@@ -1,0 +1,5 @@
+SELECT ken_code,ken_name, origin, "createdAt", "updatedAt"
+FROM (
+   SELECT *, ROW_NUMBER() OVER (PARTITION BY ken_code ORDER BY CASE WHEN origin = 'Prod' THEN  1 ELSE 2 END) AS rn
+   FROM joined.kens ) temp
+WHERE temp.rn = 1
