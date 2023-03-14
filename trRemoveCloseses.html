@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<table>
+   <tr> 
+       <td><input type="button" value="Delete Row1"></td>
+   </tr>
+   <tr> 
+       <td><input type="button" value="Delete Row2" ></td>
+   </tr>
+   <tr> 
+       <td><input type="button" value="Delete Row3"></td>
+   </tr>
+</table>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    $('input[type="button"]').click(function(e){
+   $(this).closest('tr').remove()
+})
+
+</script>
+</body>
+</html>
+
+
