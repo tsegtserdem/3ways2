@@ -1,5 +1,6 @@
-let myFood = '1';
-let yourFood = '2';
+let mu = '1';
+let yu = '2';
+let ku = '3';
 
-[myFood, yourFood] = [yourFood, myFood];
-console.log(myFood, yourFood);
+[mu, yu, ku] = [yu, mu, ku];
+console.log(mu, yu, ku);
