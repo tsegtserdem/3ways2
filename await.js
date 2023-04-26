@@ -16,4 +16,4 @@ const fetch = async () => {
 fetch()
 // SyntaxError: await is only valid in async functions
 // const userInfo = await getUserInfo()
-// console.log('userInfo 2', userInfo)
+// console.log('userInfo 2', userInfo)  
