@@ -5,6 +5,7 @@ const n = 1
 // }
 
 const conditions = [1, 2, 3, 4, 5] // add here
-if (conditions.includes(6)) {
-    console.log("true");
+if (conditions.includes(3)) {
+    console.log(conditions.includes(3));
+    console.log(conditions.indexOf(3));
 }
