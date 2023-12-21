@@ -1,0 +1,83 @@
+<h1>Detail and Summary</h1>
+<h2>Semantic HTML Tag</h2>
+<style>
+    /* You can style the details as well as the summary tag as you wish - not mandatory for the HTML component to work
+*/
+
+body {
+  align-items: center;
+  background-color: CadetBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: indigo;
+  font-family: Papyrus, fantasy;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+details {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+details p {
+  padding: 20px;
+}
+
+summary {
+  background-color: indigo;
+  border: 1px solid indigo;
+  color: ghostwhite;
+  padding: 20px;
+}
+
+summary:hover {
+  background-color: lightslategray;
+  border: 1px solid lightslategray;
+}
+
+details[open] summary {
+  background-color: lightslategray;
+  border: 3px solid lightslategray;
+  color: black;
+}
+
+details[open] {
+  background: ghostwhite;
+}
+
+section {
+  max-width: 70%;
+  width: 100%;
+}
+</style>
+<section>
+  <details open>
+    <summary>Bulbasaur #0001</summary>
+    <p>
+      There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.
+    </p>
+  </details>
+  <details>
+    <summary>Charmander #0004</summary>
+    <p>It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+  </details>
+  <details>
+    <summary>Squirtle #0007</summary>
+    <p>When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+  </details>
+  <details>
+    <summary>Pikachu #0025</summary>
+    <p>Pikachu #0025</p>
+  </details>
+</section>
